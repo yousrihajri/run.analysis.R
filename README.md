@@ -1,5 +1,5 @@
 # run.analysis.R
-ProgrammingAssignmentGetting&amp;CleaningData
+#ProgrammingAssignmentGetting&amp;CleaningData
 
 systimebegin <- Sys.time()
 library(data.table)
