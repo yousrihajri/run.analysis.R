@@ -44,7 +44,6 @@ fulldata <- cbind(subject, y, X)
 ##Remove old data
 
 remove (subject, X, y)
-remove (features)
 remove (subject_train, subject_test,
         X_train, X_test,
         y_train, y_test)
