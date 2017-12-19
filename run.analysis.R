@@ -1,8 +1,7 @@
 systimebegin <- Sys.time()
 library(data.table)
-library(dplyr)
-library(tidyr)
 library(stringr)
+library(tidyverse)
 
 
 ##Extract features and activity labels
@@ -38,16 +37,6 @@ subject <- rename (subject, subject=V1)
 
 fulldata <- cbind(subject, y, X)
 
-##Remove old data
-
-remove (subject, X, y)
-remove (features)
-remove (subject_train, subject_test,
-        X_train, X_test,
-        y_train, y_test)
-remove (activity_labels)
-
-
 ##Create meanfulldata with colnames containing "mean"
 v1 <- c()
 for (i in 3:length(colnames(fulldata))) {
@@ -66,7 +55,7 @@ std_fulldata <- fulldata[,v2,with=FALSE]
 
 subdata <- cbind (mean_fulldata, std_fulldata)
 
-##Class the columns of subdata and make 2-digit subject
+##Class the columns of subdata 
 
 collength <- length(names(subdata))
 
@@ -76,19 +65,24 @@ for(i in 3:collength) {
 subdata$activity_labels <- as.factor(subdata$activity_labels)
 subdata$subject <- as.factor(subdata$subject)
 
-subdata <- tbl_df(subdata)
+subdata <- as.tibble (subdata)
 
 subdata <- arrange (subdata, subject)
 
 ##Summarise all subject/activity_labels by mean function
 
-subdata <- subdata %>%
+final_data <- subdata %>%
   group_by(subject, activity_labels) %>%
   summarise_all (funs(mean))
 
 
 ##Remove old data
 
+remove (subject, X, y)
+remove (subject_train, subject_test,
+        X_train, X_test,
+        y_train, y_test)
+remove (activity_labels, features)
 remove (fulldata, mean_fulldata, std_fulldata)
 
 
@@ -96,6 +90,7 @@ remove (fulldata, mean_fulldata, std_fulldata)
 systimeend <- Sys.time()
 runtime <- systimeend - systimebegin
 print(runtime)
+
 
 
 
