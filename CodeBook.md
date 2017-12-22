@@ -50,55 +50,55 @@ Variables are the following :
 mean value of :
 - tBodyAcc	XYZ 
 - tGravityAcc	XYZ
-tBodyAccJerk	XYZ
-tBodyGyro	XYZ
-tBodyGyroJerk	XYZ
-tBodyAccMag	
-tGravityAccMag	
-tBodyAccJerkMag	
-tBodyGyroMag	
-tBodyGyroJerkMag	
-fBodyAcc	XYZ
-fBodyAccJerk	XYZ
-fBodyGyro	XYZ
-fBodyAccMag	
-fBodyAccJerkMag	
-fBodyGyroMag	
-fBodyGyroJerkMag	
+- tBodyAccJerk	XYZ
+- tBodyGyro	XYZ
+- tBodyGyroJerk	XYZ
+- tBodyAccMag	
+- tGravityAccMag	
+- tBodyAccJerkMag	
+- tBodyGyroMag	
+- tBodyGyroJerkMag	
+- fBodyAcc	XYZ
+- fBodyAccJerk	XYZ
+- fBodyGyro	XYZ
+- fBodyAccMag	
+- fBodyAccJerkMag	
+- fBodyGyroMag	
+- fBodyGyroJerkMag	
 
 constituting 33 vars
 
 standard deviation of:
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+- tBodyAcc-XYZ
+- tGravityAcc-XYZ
+- tBodyAccJerk-XYZ
+- tBodyGyro-XYZ
+- tBodyGyroJerk-XYZ
+- tBodyAccMag
+- tGravityAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc-XYZ
+- fBodyAccJerk-XYZ
+- fBodyGyro-XYZ
+- fBodyAccMag
+- fBodyAccJerkMag
+- fBodyGyroMag
+- fBodyGyroJerkMag
 
 constituting 33 vars
 
 meanFreq(): Weighted average of the frequency components to obtain a mean frequency of:
 
-tBodyAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
+- tBodyAccMag
+- tBodyAccJerkMag
+- tBodyGyroMag
+- tBodyGyroJerkMag
+- fBodyAcc-XYZ
+- fBodyAccJerk-XYZ
+- fBodyGyro-XYZ
 
 constituting 13 vars
 
