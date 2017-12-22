@@ -48,8 +48,8 @@ Output: final_data 180 obs. of 81 vars
 Variables are the following : 
 
 mean value of :
-tBodyAcc	XYZ 
-tGravityAcc	XYZ
+#tBodyAcc	XYZ 
+#tGravityAcc	XYZ
 tBodyAccJerk	XYZ
 tBodyGyro	XYZ
 tBodyGyroJerk	XYZ
