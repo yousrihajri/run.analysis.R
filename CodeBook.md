@@ -109,4 +109,3 @@ The observations are summarised per subject per activity_label so 30*6=180
 
 
 
-
